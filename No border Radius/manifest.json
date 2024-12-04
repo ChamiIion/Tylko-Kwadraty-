@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "No Border Radius",
+    "version": "1.0",
+    "description": "Zmienia wszystkie border-radius na 0px na każdej stronie.",
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
